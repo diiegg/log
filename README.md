@@ -1,6 +1,7 @@
 # log.py Is script which parses /var/log/messages
 
 [![Build Status](https://travis-ci.org/diiegg/log.svg?branch=master)](https://travis-ci.org/diiegg/log)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/diiegg/log/blob/master/MIT.txt)
 
 # Parses /var/log/messages
 
