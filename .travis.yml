@@ -14,7 +14,7 @@ install:
 
 # Run the unit test
 script:
-  - pytest --cov=log.py/
+  - pytest --cov=YourModule/
 # Push the results back to codecov
 after_success:
   - coveralls
