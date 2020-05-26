@@ -8,8 +8,6 @@ python:
   - 3.8
   - pypy3
 
-install:
-  - pip install tox
+install: pip install -e .
 
-script:
-  - tox -e $(echo py$TRAVIS_PYTHON_VERSION | tr -d . | sed -e 's/pypypy/pypy/')-cov41-pyyaml
+script: pytest
