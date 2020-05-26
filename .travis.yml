@@ -1,23 +1,15 @@
+sudo: false
+
 language: python
+python:
   - 3.5
   - 3.6
   - 3.7
   - 3.8
   - pypy3
 
-before_install:
-  - python --version
-  - pip install -U pip
-  - pip install -U pytest
-  - pip install codecov
-  - pip install coveralls
-
 install:
-  - coverage run --source=mypkg -m pytest tests/
-  - pip install tox-travis
+  - pip install tox
 
-script: tox
-
-after_success:
-  - coveralls
-
+script:
+  - tox -e $(echo py$TRAVIS_PYTHON_VERSION | tr -d . | sed -e 's/pypypy/pypy/')-cov41-pyyaml
