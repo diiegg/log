@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/diiegg/log.svg?branch=master)](https://travis-ci.org/diiegg/log)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/diiegg/log/blob/master/MIT.txt)
+[![Build Status](https://cloud.drone.io/api/badges/diiegg/log/status.svg)](https://cloud.drone.io/diiegg/log)
 
 # Parses /var/log/messages
 
