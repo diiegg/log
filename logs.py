@@ -7,7 +7,7 @@ hostname = Word(alphas + nums + "_" + "-")
 daemon = Word(alphas + "/" + "-" + "_") + Optional(Suppress("[") + integer + Suppress("]")) + Suppress(":")
 message = Regex(".*")
 bnf = serverDateTime + hostname + daemon + message
-
+# Change  the /var/log/syslog to your syslog file 
 with open('/var/log/syslog') as syslogFile:
     for line in syslogFile:
                try:
