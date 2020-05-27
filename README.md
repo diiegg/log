@@ -64,7 +64,13 @@ pyparsing
 
 ### Installation
 
-to Run  a test :
+To Run  a test:
+1 Open the file log.py with a text editor and changee the "mypath.log" field to your .log     location file.
+2 open a terminal and typye:
+
+```sh
+pyton log.py
+```
 
 ```sh
 pyton log.py
